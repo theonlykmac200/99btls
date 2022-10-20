@@ -1,6 +1,7 @@
 const express = require("express")
 const app = express()
 
+//champagne!! eeek that would be realllly drunk
 
 app.get("/", (req, res) => {
     res.send(`<h1> 99 Bottles of Champagne on the wall, 99 Bottles of Champagne... <a href= "/98">Take one down, Pass it around</a></h1>`)
@@ -15,6 +16,8 @@ app.get("/:btlsOfChampagneLeft", (req, res) => {
     }
 })
 
+
+//I would recommend trying out the bugs in the code if you have time, it requires a bit more logic, more conditions and a Math.random()
 
 app.listen(3000, () => {
     console.log("Drink some water before bed")
